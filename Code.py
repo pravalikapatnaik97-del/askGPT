@@ -2,7 +2,7 @@ import streamlit as st
 
 from google import genai
 
-client = genai.Client(api_key="AIzaSyB6IaZFcW2c3YXQwvRH5vy10zRzRBAw0ic")
+client = genai.Client(api_key="")
 st.title("askGPT")
 def inputs(prompt):
     response = client.models.generate_content(
@@ -20,4 +20,5 @@ if st.button('Upload'):
             st.snow()
     else:
         st.warning("1st ask any question!")
+
 
